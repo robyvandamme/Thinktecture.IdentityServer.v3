@@ -24,7 +24,7 @@ namespace Thinktecture.IdentityServer.Host
 #if DEBUG
                         PublicHostName = "http://localhost:3333"
 #else
-                        PublicHostName = "http://iidsrv3.azurewebsites.net/"
+                        PublicHostName = "http://iidsrv3.azurewebsites.net"
 #endif
                     };
 
