@@ -21,7 +21,11 @@ namespace Thinktecture.IdentityServer.Host
                         SiteName = "Thinktecture IdentityServer v3 - preview 1",
                         SigningCertificate = Cert.Load(),
                         Factory = factory,
+#if DEBUG
                         PublicHostName = "http://localhost:3333"
+#else
+                        PublicHostName = "http://iidsrv3.azurewebsites.net/"
+#endif
                     };
 
                     coreApp.UseIdentityServer(opts);
